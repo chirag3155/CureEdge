@@ -15,7 +15,8 @@ const Home = () => {
             Securely share your comprehensive medical history with doctors and
             loved ones, for better communication and care.
           </p>
-          <Button>Appointment Now</Button>
+          <Button className="transition duration-300 ease-in-out bg-teal-400 hover:bg-teal-600 text-white py-2 px-4 rounded  ">
+            Appointment Now</Button>
         </div>
         <div className="max-w-xs md:max-w-none">
           <img src={hero} alt="hero" />
