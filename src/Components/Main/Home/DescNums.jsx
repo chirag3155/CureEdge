@@ -6,7 +6,7 @@ const DescNums = () => {
       {descNums.map((descNum, index) => (
         <div
           className="rounded-3xl shadow-xl p-6 md:px-2 lg:w-1/5 w-xl bg-[#ffffffd1] hover:-translate-y-1 hover:scale-110  duration-300"
-          style={{ background: 'linear-gradient(90.26deg, rgb(160 221 243) 0.17%, rgb(18, 188, 171) 99.77%)' }}
+          style={{ background: 'linear-gradient(90.26deg, rgb(160, 221, 243) 0.17%, rgb(128 255 242) 99.77%)' }}
           key={index}
         >
           <h3 className="lg:text-4xl text-2xl font-bold mb-2">{descNum.num}</h3>
