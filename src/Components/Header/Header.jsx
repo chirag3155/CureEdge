@@ -22,8 +22,9 @@ const Header = () => {
 
   return (
     <div
-  className={`${flexBetween}  bg-[url('src/assets/images/heroi-bg.webp')] transition fixed top-0 z-30 w-full p-5 md:px-16`}
-  // style={{ backgroundImage: 'linear-gradient(90.26deg, #214F89 0.17%, #12BCAB 99.77%)' }}
+  className={`${flexBetween} ${
+    isTopOfPage ? '' : 'bg-blue'
+  } transition fixed top-0 z-30 w-full p-5 md:px-16`}
 >
       <img className="w-10 sm:w-20" src={Logo} alt="Logo" />
       <NavBar
