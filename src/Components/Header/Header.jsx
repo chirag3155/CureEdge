@@ -22,10 +22,10 @@ const Header = () => {
 
   return (
     <div
-  className={`${flexBetween} ${
-    isTopOfPage ? '' : 'bg-blue'
-  } transition fixed top-0 z-30 w-full p-5 md:px-16`}
->
+      className={`${flexBetween} ${
+        isTopOfPage ? '' : 'bg-[#84ceff]'
+      } transition fixed top-0 z-30 w-full p-5 md:px-16`}
+    >
       <img className="w-10 sm:w-20" src={Logo} alt="Logo" />
       <NavBar
         flexBetween={flexBetween}
