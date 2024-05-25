@@ -7,9 +7,9 @@ const Main = () => {
   return (
     <div className="m-auto max-w-[1250px] px-5 md:px-16">
       <Home />
-      <Services  />
+      {/* <Services  /> */}
       <Doctors />
-      <Reviews />
+      {/* <Reviews /> */}
     </div>
   );
 };
