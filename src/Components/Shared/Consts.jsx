@@ -230,7 +230,7 @@ export const DoctorsData = {
       job: "Neurologist",
     },
   ],
-  heading2: "Who Are We?",
+  heading2: "About Us",
   desc: "A collaborative hospital service website is a digital platform that brings together healthcare professionals, patients and administrators to streamline and enganhe the delivery of healthcare services. This innovative platform allows for seamless communication and coordination among healthcare teams, enabling them to provide more efficient and personalized care to patients.",
   img: Banner2,
 };
