@@ -12,7 +12,7 @@ function App() {
   return (
     <>
       <Routes>
-        <Route path="/Hospital-Website/home" element={<Home />} />
+        <Route path="/home" element={<Home />} />
         <Route path="/about-us" element={<AboutUs />} />
         <Route path="/services" element={<Services />} />
         <Route path="/blogs" element={<Blogs />} />
@@ -29,7 +29,7 @@ const Home = () => {
       <div className="text-[#1d4d85] app min-w-[280px] min-h-screen  bg-[url('src/assets/images/heroi-bg.webp')]">
         <Header />
         <Main />
-        {/* <Footer /> */}
+        <Footer />
       </div>
     </>
   );
