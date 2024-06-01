@@ -1,6 +1,6 @@
+import React, { useState, useEffect } from "react";
 import Logo from "@/assets/Images/Logo.png";
 import NavBar from "./NavBar";
-import { useState, useEffect } from "react";
 
 const Header = () => {
   const [selectedPage, setSelectedPage] = useState("home"); // Assuming 'home' is the default value
@@ -26,7 +26,12 @@ const Header = () => {
         isTopOfPage ? "" : "bg-[#84ceff]"
       } transition fixed top-0 z-30 w-full p-5 md:px-16`}
     >
-      <img className="w-10 sm:w-20" src={Logo} alt="Logo" />
+      <div className="flex items-center">
+        <img className="w-10 sm:w-20" src={Logo} alt="Logo" />
+        <h1 className="ml-4 text-xl sm:text-2xl font-bold text-green-300">
+          CareEdge
+        </h1>
+      </div>
       <NavBar
         flexBetween={flexBetween}
         selectedPage={selectedPage}
