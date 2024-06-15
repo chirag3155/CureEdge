@@ -14,9 +14,9 @@ const cardData = [
     beds: 3,
     baths: 1,
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, accusamus.",
+      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem unde ea voluptas fuga odio vel veniam eveniet, explicabo autem earum?",
     location: "BED BOOKING",
-    price: "Price",
+    // price: "Price",
   },
   {
     id: "card2",
@@ -31,7 +31,7 @@ const cardData = [
     description:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem unde ea voluptas fuga odio vel veniam eveniet, explicabo autem earum?",
     location: "TESTS",
-    price: "Price",
+    // price: "Price",
   },
   {
     id: "card3",
@@ -46,7 +46,7 @@ const cardData = [
     description:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa libero totam nostrum consequatur autem quae provident quos alias fugit maxime nisi labore, temporibus tempore illo natus voluptates aliquam ipsum officia quasi placeat aut facilis laudantium nam!",
     location: "APPOINTMENT",
-    price: "Price",
+    // price: "Price",
   },
   {
     id: "card4",
@@ -60,8 +60,8 @@ const cardData = [
     baths: 1,
     description:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem unde ea voluptas fuga odio vel veniam eveniet, explicabo autem earum?",
-    location: "EXPERT ASSISTANCE",
-    price: "Price",
+    location: "ASSISTANCE",
+    // price: "Price",
   },
 ];
 

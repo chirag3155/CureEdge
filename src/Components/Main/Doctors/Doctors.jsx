@@ -1,35 +1,61 @@
 import { DoctorsData } from "@/Components/Shared/Consts";
 import SectionWrapper from "../SectionWrapper";
-import Doctor from "./Doctor";
 import aboutus from "../../../assets/Images/Doctors/aboutus.png";
 
 const Doctors = () => {
   return (
     <SectionWrapper id="doctors">
-      {/* <h3 className="text-4xl font-bold text-center mb-20">
-        Recommended Hospitals
-      </h3>
-      {/* <div className="flex justify-between gap-10 overflow-auto px-5 md:p-0">
-        {DoctorsData.doctors.map((doctor, index) => (
-          <Doctor key={index} doc={doctor} />
-        ))}
-      </div> */}
-
-      <div className="text-center my-8">
-        <div className="flex justify-center items-center space-x-4">
-          <div className="w-20 h-1 bg-teal-400"></div>
-          <h1 className="text-3xl font-bold">About Us</h1>
-          <div className="w-20 h-1 bg-teal-400"></div>
-        </div>
-      </div>
-      <div className="h-max"></div>
-      <div className="flex flex-wrap items-center max-w-full justify-normal">
-        <div className="flex-1 p-4">
-          <img className="max-w-full h-auto" src={aboutus} alt="About Us" />
-        </div>
-        <div className="w-1/12"></div>
-        <div className="flex-1 p-4 text-justify text-xs sm:text-base md:text-lg">
-          {DoctorsData.desc}
+      <div className="container py-10 mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+          {/* Image Column (Left on all screens) */}
+          <div className="md:order-1 flex items-center justify-center">
+            <img
+              className="rounded-lg shadow-lg md:max-h-full object-cover w-full"
+              src={aboutus}
+              alt="About Us"
+            />
+          </div>
+          {/* Text Column (Right on all screens) */}
+          <div className="md:order-2 flex items-center justify-center">
+            <div className="p-4 max-w-lg">
+              <h9 className="text-primary text-lg font-semibold mb-2">About Us</h9>
+              <h1 className="text-3xl md:text-4xl font-bold mb-4">Welcome to CareEdge</h1>
+              <p className="text-base mb-4">
+                Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit.
+              </p>
+              <p className="text-base mb-4">
+                Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet.
+              </p>
+              {/* Features */}
+              <div className="grid grid-cols-2 gap-4 mb-4">
+                <p className="flex items-center">
+                  <i className="fa fa-arrow-right text-primary me-2"></i> Skilled Instructors
+                </p>
+                <p className="flex items-center">
+                  <i className="fa fa-arrow-right text-primary me-2"></i> Bed Booking
+                </p>
+                <p className="flex items-center">
+                  <i className="fa fa-arrow-right text-primary me-2"></i> Tests
+                </p>
+                <p className="flex items-center">
+                  <i className="fa fa-arrow-right text-primary me-2"></i> Expert Assistance
+                </p>
+                <p className="flex items-center">
+                  <i className="fa fa-arrow-right text-primary me-2"></i> Health Check Up
+                </p>
+                <p className="flex items-center">
+                  <i className="fa fa-arrow-right text-primary me-2"></i> International Certificate
+                </p>
+              </div>
+              {/* Read More Button */}
+              <a
+                href="#"
+                className="bg-primary text-white py-3 px-6 rounded-lg inline-block hover:bg-primary-dark transition duration-300"
+              >
+                Read More
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </SectionWrapper>

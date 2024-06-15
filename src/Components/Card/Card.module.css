@@ -103,10 +103,16 @@
 
 .card .back {
   transform: rotateY(180deg);
-  background-color: #fff;
+  background-color: #d5ecec;
   border: 2px solid rgb(240, 240, 240);
 }
-
+.location {
+  background-color: white;
+  padding: 8px;
+  margin-top: px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
 .card .back:after {
   content: "";
   position: absolute;
@@ -120,7 +126,7 @@
   background-size: cover;
   background-position: center center;
   background-image: inherit;
-  opacity: 0.6;
+  opacity: 0.4; /* Adjusted opacity */
 }
 
 .card .back .inner {

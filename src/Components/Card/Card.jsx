@@ -6,13 +6,8 @@ const Card = ({
   frontImage,
   title,
   rating,
-  details,
   location,
   price,
-  people,
-  rooms,
-  beds,
-  baths,
   description,
 }) => {
   return (
@@ -31,12 +26,10 @@ const Card = ({
           <div className={styles.inner}>
             <h2>{title}</h2>
             <div className={styles.rating}>
-              {[...Array(5)].map((star, i) => (
+              {[...Array(5)].map((_, i) => (
                 <i
                   key={i}
-                  className={`fas ${
-                    i < rating ? "fa-star" : "fa-star-half-alt"
-                  }`}
+                  className={`fas ${i < rating ? "fa-star" : "fa-star-half-alt"}`}
                 ></i>
               ))}
             </div>
@@ -45,10 +38,7 @@ const Card = ({
             </label>
           </div>
         </div>
-        <div
-          className={styles.back}
-          style={{ backgroundImage: `url(${frontImage})` }}
-        >
+        <div className={styles.back}>
           <div className={styles.inner}>
             <div className={styles.description}>{description}</div>
             <div className={styles.location}>{location}</div>
