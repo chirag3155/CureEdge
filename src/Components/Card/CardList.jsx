@@ -59,7 +59,7 @@ const cardData = [
     beds: 1,
     baths: 1,
     description:
-      "A charming studio in the heart of the city. Perfect for a couple or a solo traveler.",
+      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem unde ea voluptas fuga odio vel veniam eveniet, explicabo autem earum?",
     location: "EXPERT ASSISTANCE",
     price: "Price",
   },

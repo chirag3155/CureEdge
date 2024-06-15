@@ -17,7 +17,12 @@ const Card = ({
 }) => {
   return (
     <div className={styles.card}>
-      <input type="checkbox" id={id} className={styles.more} aria-hidden="true" />
+      <input
+        type="checkbox"
+        id={id}
+        className={styles.more}
+        aria-hidden="true"
+      />
       <div className={styles.content}>
         <div
           className={styles.front}
@@ -29,7 +34,9 @@ const Card = ({
               {[...Array(5)].map((star, i) => (
                 <i
                   key={i}
-                  className={`fas ${i < rating ? "fa-star" : "fa-star-half-alt"}`}
+                  className={`fas ${
+                    i < rating ? "fa-star" : "fa-star-half-alt"
+                  }`}
                 ></i>
               ))}
             </div>
@@ -38,13 +45,20 @@ const Card = ({
             </label>
           </div>
         </div>
-        <div className={styles.back}>
+        <div
+          className={styles.back}
+          style={{ backgroundImage: `url(${frontImage})` }}
+        >
           <div className={styles.inner}>
             <div className={styles.description}>{description}</div>
             <div className={styles.location}>{location}</div>
             <div className={styles.price}>{price}</div>
-            <label htmlFor={id} className={`${styles.button} ${styles.return}`} aria-hidden="true">
-              <i className="fas fa-arrow-left"></i>
+            <label
+              htmlFor={id}
+              className={`${styles.button} ${styles.return}`}
+              aria-hidden="true"
+            >
+              BACK
             </label>
           </div>
         </div>
