@@ -1,9 +1,9 @@
-import { Banner1Data } from '@/Components/Shared/Consts';
-import ListItem from './ListItem';
+import { Banner1Data } from "@/Components/Shared/Consts";
+import ListItem from "./ListItem";
 
 const Banner1 = () => {
   return (
-    <div className="flex flex-col-reverse sm:flex-row items-center justify-between gap-5 md:gap-10 mt-20">
+    <div className="flex flex-col-reverse sm:flex-row items-center justify-between gap-5 md:gap-10 mt-5">
       <div className="max-w-xs md:max-w-md">
         <h3 className="text-xl font-bold md:text-2xl lg:text-3xl mb-5">
           {Banner1Data.heading}

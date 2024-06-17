@@ -1,8 +1,6 @@
-
-
-const SectionWrapper = ({ id, children })  => {
+const SectionWrapper = ({ id, children }) => {
   return (
-    <section className="pt-24 md:pt-32" id={id}>
+    <section className="pt-12 md:pt-28" id={id}>
       {children}
     </section>
   );
