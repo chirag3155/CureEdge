@@ -107,14 +107,14 @@ const CardSection = () => {
       {
         breakpoint: 992, // medium devices (tablets)
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 2,
           slidesToScroll: 1,
         },
       },
       {
         breakpoint: 2000, // extra large devices (large desktops, TVs)
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 3,
           slidesToScroll: 1,
         },
       },
@@ -125,15 +125,15 @@ const CardSection = () => {
   };
 
   return (
-    <div className="w-full mt-32 h-auto">
+    <div className="w-full my-16 h-auto">
       <div className="flex justify-center items-center space-x-4">
         <div className="w-20 h-1 bg-teal-400"></div>
-        <h1 className="md:text-3xl text-xl font-bold text-center">
+        <h1 className="md:text-4xl text-2xl font-bold text-center">
           Recommended Hospitals
         </h1>
         <div className="w-20 h-1 bg-teal-400"></div>
       </div>
-      <div className="w-full mt-5 slick-container relative">
+      <div className="w-full mt-10 slick-container relative">
         <Slider {...sliderSettings}>
           {hospitalData.map((hospital) => (
             <div key={hospital.id} className="slick-slide px-2">
