@@ -18,33 +18,45 @@ const Doctors = () => {
           {/* Text Column (Right on all screens) */}
           <div className="md:order-2 flex items-center justify-center">
             <div className="p-4 max-w-lg">
-              <h9 className="text-primary text-lg font-semibold mb-2">About Us</h9>
-              <h1 className="text-3xl md:text-4xl font-bold mb-4">Welcome to CareEdge</h1>
+              <h2 className="text-primary text-lg font-semibold mb-2">
+                About Us
+              </h2>
+              <h1 className="text-3xl md:text-4xl font-bold mb-4">
+                Welcome to CareEdge
+              </h1>
               <p className="text-base mb-4">
-                Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit.
+                Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit.
+                Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit.
               </p>
               <p className="text-base mb-4">
-                Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet.
+                Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit.
+                Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit,
+                sed stet lorem sit clita duo justo magna dolore erat amet.
               </p>
               {/* Features */}
               <div className="grid grid-cols-2 gap-4 mb-4">
                 <p className="flex items-center">
-                  <i className="fa fa-arrow-right text-primary me-2"></i> Skilled Instructors
+                  <i className="fa fa-arrow-right text-primary me-2"></i>{" "}
+                  Skilled Instructors
                 </p>
                 <p className="flex items-center">
-                  <i className="fa fa-arrow-right text-primary me-2"></i> Bed Booking
+                  <i className="fa fa-arrow-right text-primary me-2"></i> Bed
+                  Booking
                 </p>
                 <p className="flex items-center">
                   <i className="fa fa-arrow-right text-primary me-2"></i> Tests
                 </p>
                 <p className="flex items-center">
-                  <i className="fa fa-arrow-right text-primary me-2"></i> Expert Assistance
+                  <i className="fa fa-arrow-right text-primary me-2"></i> Expert
+                  Assistance
                 </p>
                 <p className="flex items-center">
-                  <i className="fa fa-arrow-right text-primary me-2"></i> Health Check Up
+                  <i className="fa fa-arrow-right text-primary me-2"></i> Health
+                  Check Up
                 </p>
                 <p className="flex items-center">
-                  <i className="fa fa-arrow-right text-primary me-2"></i> International Certificate
+                  <i className="fa fa-arrow-right text-primary me-2"></i>{" "}
+                  International Certificate
                 </p>
               </div>
               {/* Read More Button */}
