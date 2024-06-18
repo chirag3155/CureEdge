@@ -2,10 +2,10 @@ import { descNums } from '@/Components/Shared/Consts';
 
 const DescNums = () => {
   return (
-    <div className="flex  px-10 xs:px-16 sm:px-5 md:px-0 gap-5 flex-wrap items-center md:flex-nowrap text-center justify-center md:justify-around mt-10">
+    <div className="flex m-5 md:m-[30px] mt-20 px-10 xs:px-16 xs:m-[10px] sm:m- sm:px-5 md:px-0 flex-wrap md:flex-nowrap text-center justify-center md:justify-center gap-2 sm:gap-7 lg:gap-[40px]">
       {descNums.map((descNum, index) => (
         <div
-          className="shadow-lg shadow-cyan-500/70 rounded-3xl shadow-xl p-6 md:px-2 lg:w-1/5 w-xl bg-[#ffffffd1] hover:-translate-y-1 hover:scale-110  duration-300"
+           className="shadow-lg h-[113px] shadow-cyan-500/70 rounded-3xl shadow-xl p-4 md:px-1 lg:w-60 w-20 bg-[#ffffffd1] w-full xs:w-[50%] sm:w-[25%] md:w-[20%] lg:w-[14%] xl:w-[14%] m-2 hover:-translate-y-1 hover:scale-110 duration-300"
           style={{ background: 'linear-gradient(90.26deg, rgb(160, 221, 243) 0.17%, rgb(128 255 242) 99.77%)' }}
           key={index}
         >

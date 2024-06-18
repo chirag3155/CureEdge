@@ -42,9 +42,7 @@ const Home = () => {
       <SearchContainer />
 
       {/* Container for DescNums */}
-      <div className="max-w-5xl mx-auto ">
-        <DescNums />
-      </div>
+      <DescNums/>
       
       {/* <OyoExpanding/> */}
     </SectionWrapper>
