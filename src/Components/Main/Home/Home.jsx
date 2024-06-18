@@ -40,11 +40,9 @@ const Home = () => {
       </div>
 
       <SearchContainer />
-
+<DescNums/>
       {/* Container for DescNums */}
-      <div className="max-w-5xl mx-auto ">
-        <DescNums />
-      </div>
+      
       
       {/* <OyoExpanding/> */}
     </SectionWrapper>
