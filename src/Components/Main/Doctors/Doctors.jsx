@@ -18,7 +18,7 @@ const Doctors = () => {
           {/* Text Column (Right on all screens) */}
           <div className="md:order-2 flex items-center justify-center">
             <div className="p-4 max-w-lg">
-              <h2 className="text-primary text-lg font-semibold mb-2">
+              <h2 className="text-primary md:text-4xl text-2xl font-semibold mb-2">
                 About Us
               </h2>
               <h1 className="text-3xl md:text-4xl font-bold mb-4">

@@ -4,6 +4,7 @@ import Slider from "react-slick";
 import hospitalImage from "../../assets/Images/Recommendation/Rectangle4185.png";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import SectionWrapper from "../Main/SectionWrapper";
 
 const CardSection = () => {
   // dummy data for cards
@@ -125,48 +126,50 @@ const CardSection = () => {
   };
 
   return (
-    <div className="w-full mt-28 h-auto">
-      <div className="flex justify-center items-center space-x-4">
-        <div className="w-20 h-1 bg-teal-400"></div>
-        <h1 className="md:text-4xl text-2xl font-bold text-center">
-          Recommended Hospitals
-        </h1>
-        <div className="w-20 h-1 bg-teal-400"></div>
+    <SectionWrapper id="recommendation">
+      <div className="w-full mt-28 h-auto">
+        <div className="flex justify-center items-center space-x-4">
+          <div className="w-20 h-1 bg-teal-400"></div>
+          <h1 className="md:text-4xl text-2xl font-bold text-center">
+            Recommended Hospitals
+          </h1>
+          <div className="w-20 h-1 bg-teal-400"></div>
+        </div>
+        <div className="w-full mt-10 slick-container relative">
+          <Slider {...sliderSettings}>
+            {hospitalData.map((hospital) => (
+              <div key={hospital.id} className="slick-slide px-2">
+                <Card
+                  hospital={hospital}
+                  onCallNow={() => {
+                    console.log("Call Now");
+                  }}
+                  onBookAppointment={() => {
+                    console.log("Book Appointment");
+                  }}
+                />
+              </div>
+            ))}
+          </Slider>
+          <button
+            className="absolute top-1/2 transform text-3xl text-gray-600 -translate-y-1/2 md:-translate-x-12 -translate-x-1/2 left-0 bg-gray-100 bg-opacity-75 px-4 py-2 rounded-full shadow-md z-10"
+            onClick={() => {
+              document.querySelector(".slick-prev.slick-arrow").click();
+            }}
+          >
+            {"<"}
+          </button>
+          <button
+            className="absolute top-1/2 transform text-3xl text-gray-600 -translate-y-1/2 md:translate-x-12 translate-x-1/2 right-0 bg-gray-100 bg-opacity-75 px-4 py-2 rounded-full shadow-md z-10"
+            onClick={() => {
+              document.querySelector(".slick-next.slick-arrow").click();
+            }}
+          >
+            {">"}
+          </button>
+        </div>
       </div>
-      <div className="w-full mt-10 slick-container relative">
-        <Slider {...sliderSettings}>
-          {hospitalData.map((hospital) => (
-            <div key={hospital.id} className="slick-slide px-2">
-              <Card
-                hospital={hospital}
-                onCallNow={() => {
-                  console.log("Call Now");
-                }}
-                onBookAppointment={() => {
-                  console.log("Book Appointment");
-                }}
-              />
-            </div>
-          ))}
-        </Slider>
-        <button
-          className="absolute top-1/2 transform text-3xl text-gray-600 -translate-y-1/2 md:-translate-x-12 -translate-x-1/2 left-0 bg-gray-100 bg-opacity-75 px-4 py-2 rounded-full shadow-md z-10"
-          onClick={() => {
-            document.querySelector(".slick-prev.slick-arrow").click();
-          }}
-        >
-          {"<"}
-        </button>
-        <button
-          className="absolute top-1/2 transform text-3xl text-gray-600 -translate-y-1/2 md:translate-x-12 translate-x-1/2 right-0 bg-gray-100 bg-opacity-75 px-4 py-2 rounded-full shadow-md z-10"
-          onClick={() => {
-            document.querySelector(".slick-next.slick-arrow").click();
-          }}
-        >
-          {">"}
-        </button>
-      </div>
-    </div>
+    </SectionWrapper>
   );
 };
 

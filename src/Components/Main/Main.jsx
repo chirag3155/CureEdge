@@ -10,7 +10,7 @@ const Main = () => {
   return (
     <>
       <Home />
-      <div className="m-auto max-w-[1250px] px-5 md:px-16">
+      <div className="max-w-[1800px] m-auto md:px-16 px-8">
         {/* <CardList /> */}
         {/* <Services /> */}
         <Services1 />
