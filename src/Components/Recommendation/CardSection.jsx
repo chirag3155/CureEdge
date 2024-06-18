@@ -150,7 +150,7 @@ const CardSection = () => {
           ))}
         </Slider>
         <button
-          className="absolute top-1/2 transform -translate-y-1/2 -translate-x-1/2 left-0 bg-gray-100 bg-opacity-75 px-4 py-2 rounded-full shadow-md z-10 text-black"
+          className="absolute top-1/2 transform text-3xl text-gray-600 -translate-y-1/2 md:-translate-x-12 -translate-x-1/2 left-0 bg-gray-100 bg-opacity-75 px-4 py-2 rounded-full shadow-md z-10"
           onClick={() => {
             document.querySelector(".slick-prev.slick-arrow").click();
           }}
@@ -158,7 +158,7 @@ const CardSection = () => {
           {"<"}
         </button>
         <button
-          className="absolute top-1/2 transform -translate-y-1/2 translate-x-1/2 right-0 bg-gray-100 bg-opacity-75 px-4 py-2 rounded-full shadow-md z-10 text-black"
+          className="absolute top-1/2 transform text-3xl text-gray-600 -translate-y-1/2 md:translate-x-12 translate-x-1/2 right-0 bg-gray-100 bg-opacity-75 px-4 py-2 rounded-full shadow-md z-10"
           onClick={() => {
             document.querySelector(".slick-next.slick-arrow").click();
           }}
