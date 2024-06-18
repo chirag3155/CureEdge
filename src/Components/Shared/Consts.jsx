@@ -26,8 +26,8 @@ export const links = [
   "Home",
   "About Us",
   "Services",
-  "Prices",
-  "Blogs",
+  // "Prices",
+  // "Blogs",
   "Contact Us",
 ];
 
