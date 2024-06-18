@@ -21,7 +21,7 @@ const Services1 = () => {
         </div>
       </div>
       <div className=" flex flex-col justify-between lg:flex-row gap-10 lg:gap-5 ">
-        <CardList />
+        {/* <CardList /> */}
       </div>
       <Banner1 />
     </SectionWrapper>
