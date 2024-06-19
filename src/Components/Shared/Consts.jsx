@@ -22,14 +22,7 @@ import user3 from "../../assets/Images/Users/user3.jpg";
 
 import logo from "../../assets/Images/Logo.png";
 
-export const links = [
-  "Home",
-  "About Us",
-  "Services",
-  "Prices",
-  "Blogs",
-  "Contact Us",
-];
+export const links = ["Home", "About Us", "Blogs", "Contact Us"];
 
 export const descNums = [
   {
