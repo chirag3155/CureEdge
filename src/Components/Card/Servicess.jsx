@@ -2,7 +2,7 @@ import { ServicesData } from "@/Components/Shared/Consts";
 import Banner1 from "../Main/Services/Banner1";
 import { useState } from "react";
 import SectionWrapper from "../Main/SectionWrapper";
-import CardList from "./cardList";
+// import CardList from "./cardList";
 
 const Services1 = () => {
   const [SelectService, setSelectService] = useState("cardiology"); // Assuming 'cardiology' is the default value
@@ -21,7 +21,7 @@ const Services1 = () => {
         </div>
       </div>
       <div className=" flex flex-col justify-between lg:flex-row gap-10 lg:gap-5 ">
-        <CardList />
+        {/* <CardList /> */}
       </div>
       <Banner1 />
     </SectionWrapper>

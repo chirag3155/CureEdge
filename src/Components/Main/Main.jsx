@@ -5,6 +5,7 @@ import Reviews from "./Review/Reviews";
 // import CardList from "../Card/cardList";
 import Services1 from "../Card/Servicess";
 import CardSection from "../Recommendation/CardSection";
+import OurTeam from "../OurTeam/OurTeam";
 
 const Main = () => {
   return (
@@ -15,6 +16,7 @@ const Main = () => {
         {/* <Services /> */}
         <Services1 />
         <CardSection />
+        <OurTeam />
         <Doctors />
         <Reviews />
       </div>
