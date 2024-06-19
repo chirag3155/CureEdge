@@ -1,5 +1,5 @@
-import team1 from "../../assets/Images/Team/team1.jpeg";
-import team2 from "../../assets/Images/Team/team2.jpeg";
+import team1 from "../../assets/Images/Team/team1.png";
+import team2 from "../../assets/Images/Team/team2.png";
 import { FaLinkedin } from "react-icons/fa";
 
 const OurTeam = () => {
