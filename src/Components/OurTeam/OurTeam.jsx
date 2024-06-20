@@ -15,7 +15,7 @@ const OurTeam = () => {
         </p>
       </div>
       <div className="w-full flex md:flex-row flex-col md:justify-center items-center my-16 md:gap-12 gap-8">
-        <div className="w-[300px] bg-stone-50 px-5 py-12 bg flex flex-col justify-center items-center gap-5 shadow-lg">
+        <div className="w-[300px] bg-stone-50 px-5 py-6 bg flex flex-col justify-center items-center gap-5 shadow-lg">
           <div className="w-[150px] bg-gray-300 border-[1px] border-zinc-100 shadow-md flex items-end  relative rounded-full overflow-hidden">
             <div className="w-full h-full flex justify-center">
               <img src={team1} alt="Founder Abhyuday Singh" loading="lazy" />
@@ -46,8 +46,8 @@ const OurTeam = () => {
             </div>
           </div>
         </div>
-        <div className="w-[300px] bg-stone-50 px-5 py-12 bg flex flex-col justify-center items-center gap-5 shadow-lg">
-          <div className="w-[150px] bg-red-50 border-[1px] border-zinc-100 shadow-md flex items-end  relative rounded-full overflow-hidden">
+        <div className="w-[300px] bg-stone-50 px-5 py-6 bg flex flex-col justify-center items-center gap-5 shadow-lg">
+          <div className="w-[150px] bg-gray-200 border-[1px] border-zinc-100 shadow-md flex items-end  relative rounded-full overflow-hidden">
             <div className="w-full h-full flex justify-center">
               <img
                 src={team2}
@@ -81,7 +81,7 @@ const OurTeam = () => {
             </div>
           </div>
         </div>
-        <div className="w-[300px] bg-stone-50 px-5 py-12 bg flex flex-col justify-center items-center gap-5 shadow-lg">
+        <div className="w-[300px] bg-stone-50 px-5 py-6 bg flex flex-col justify-center items-center gap-5 shadow-lg">
           <div className="w-[150px] bg-zinc-400 border-[1px] border-zinc-100 shadow-md flex items-end  relative rounded-full overflow-hidden">
             <div className="w-full h-full flex justify-center">
               <img src={team1} alt="Founder Abhyuday Singh" loading="lazy" />
