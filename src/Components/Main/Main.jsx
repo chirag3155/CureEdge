@@ -2,7 +2,7 @@ import Home from "@/Components/Main/Home/Home";
 // import Services from "./Services/Services";
 import Doctors from "./Doctors/Doctors";
 import Reviews from "./Review/Reviews";
-// import CardList from "../Card/cardList";
+// import CardList from "../Card/CardList";
 import Services1 from "../Card/Servicess";
 import CardSection from "../Recommendation/CardSection";
 import OurTeam from "../OurTeam/OurTeam";

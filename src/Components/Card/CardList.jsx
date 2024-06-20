@@ -67,7 +67,12 @@ const cardData = [
 
 const CardList = () => {
   return (
-    <div className={styles.wrapper}>
+    <div
+      className={
+        styles.wrapper +
+        "w-full max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mb-8"
+      }
+    >
       {cardData.map((card) => (
         <Card key={card.id} {...card} />
       ))}
