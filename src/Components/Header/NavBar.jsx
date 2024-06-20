@@ -27,7 +27,7 @@ const NavBar = ({ flexBetween, selectedPage, setSelectedPage }) => {
       )}
       {/* MOBILE MENU MODAL */}
       {!isAboveMediumScreens && isMenuToggled && (
-        <div className="fixed right-0 top-0 z-40 h-80 rounded-es-3xl w-[175px] md:w-[300px] bg-secondary drop-shadow-2xl">
+        <div className="fixed right-0 top-0 z-40 h-80 rounded-es-3xl w-[120px] md:w-[300px] bg-secondary drop-shadow-2xl">
           {/* CLOSE ICON */}
           <div className="flex justify-end p-5 md:pr-16 sm:pt-10">
             <button onClick={() => setIsMenuToggled((prev) => !prev)}>

@@ -26,9 +26,10 @@ export const links = [
   "Home",
   "About Us",
   "Services",
-  "Prices",
-  "Blogs",
-  "Contact Us",
+  "Team",
+  // "Prices",
+  // "Blogs",
+  "Contact",
 ];
 
 export const descNums = [
