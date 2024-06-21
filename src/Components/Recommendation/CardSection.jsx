@@ -127,7 +127,7 @@ const CardSection = () => {
 
   return (
     <SectionWrapper id="recommendation">
-      <div className="w-full mt-28 h-auto">
+      <div className="w-full h-auto">
         <div className="flex justify-center items-center space-x-4">
           <div className="w-20 h-1 bg-teal-400"></div>
           <h1 className="md:text-4xl text-2xl font-bold text-center">

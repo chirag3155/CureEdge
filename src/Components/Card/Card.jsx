@@ -1,17 +1,11 @@
-import React from "react";
+import React, { forwardRef } from "react";
 import styles from "./Card.module.css";
 
-const Card = ({
-  id,
-  frontImage,
-  title,
-  rating,
-  location,
-  price,
-  description,
-}) => {
+const Card = forwardRef((props, ref) => {
+  const { id, frontImage, title, rating, location, price, description } = props;
+
   return (
-    <div className={styles.card}>
+    <div className={styles.card} ref={ref}>
       <input
         type="checkbox"
         id={id}
@@ -29,7 +23,9 @@ const Card = ({
               {[...Array(5)].map((_, i) => (
                 <i
                   key={i}
-                  className={`fas ${i < rating ? "fa-star" : "fa-star-half-alt"}`}
+                  className={`fas ${
+                    i < rating ? "fa-star" : "fa-star-half-alt"
+                  }`}
                 ></i>
               ))}
             </div>
@@ -55,6 +51,6 @@ const Card = ({
       </div>
     </div>
   );
-};
+});
 
 export default Card;

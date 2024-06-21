@@ -1,6 +1,10 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Card from "./Card";
 import styles from "./Card.module.css"; // Import the CSS module
+
+gsap.registerPlugin(ScrollTrigger);
 
 const cardData = [
   {
@@ -66,15 +70,40 @@ const cardData = [
 ];
 
 const CardList = () => {
+  const cardsRef = useRef([]);
+
+  useEffect(() => {
+    cardsRef.current.forEach((card, index) => {
+      gsap.fromTo(
+        card,
+        { opacity: 0, y: 50 },
+        {
+          opacity: 1,
+          y: 0,
+          duration: 1,
+          scrollTrigger: {
+            trigger: card,
+            start: "top 80%",
+            toggleActions: "play none none none",
+          },
+          delay: index * 0.2,
+        }
+      );
+    });
+  }, []);
+
   return (
     <div
       className={
-        styles.wrapper +
-        "w-full max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mb-8"
+        "w-full h-full flex flex-wrap gap-4 mb-8 xl:justify-between justify-center items-center"
       }
     >
-      {cardData.map((card) => (
-        <Card key={card.id} {...card} />
+      {cardData.map((card, index) => (
+        <Card
+          key={card.id}
+          ref={(el) => (cardsRef.current[index] = el)}
+          {...card}
+        />
       ))}
     </div>
   );

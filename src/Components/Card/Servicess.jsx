@@ -20,7 +20,7 @@ const Services1 = () => {
           <div className="w-20 h-1 bg-teal-400"></div>
         </div>
       </div>
-      <div className=" flex flex-col justify-between lg:flex-row gap-10 lg:gap-5 ">
+      <div className="w-full flex justify-center items-center">
         <CardList />
       </div>
       <Banner1 />
