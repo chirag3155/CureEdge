@@ -23,11 +23,11 @@ const Card = ({ hospital, onCallNow, onBookAppointment }) => {
           {hospital.name} - {hospital.title}
         </h2>
         <div className="flex w-full justify-start gap-3 my-2">
-          <div className="flex items-center border-[1px] px-3 py-1 gap-6 rounded-md shadow-sm border-gray-300">
+          <div className="flex items-center border-[1px] p-2 px-4 gap-6 rounded-md shadow-sm border-gray-300">
             <img src={bedImage} alt="Bed" className="w-5 h-5" />
             <p className="ml-2 text-sm">{hospital.beds}</p>
           </div>
-          <div className="flex items-center border-[1px] px-3 gap-6 rounded-md shadow-sm border-gray-300">
+          <div className="flex items-center border-[1px] p-1 px-3 gap-6 rounded-md shadow-sm border-gray-300">
             <img src={doctorsImage} alt="Doctors" className="w-5 h-5" />
             <p className="ml-2 text-sm">{hospital.doctors}</p>
           </div>

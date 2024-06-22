@@ -2,18 +2,21 @@ import { descNums } from "@/Components/Shared/Consts";
 
 const DescNums = () => {
   return (
-    <div className="flex m-5 md:m-[30px] mt-20 px-10 xs:px-16 xs:m-[10px] sm:m- sm:px-5 md:px-0 flex-wrap md:flex-nowrap text-center justify-center md:justify-center gap-2 sm:gap-7 lg:gap-[40px]">
+    // flex justify-evenly items-center flex-wrap
+    <div className="max-w-[1250px]  w-full h-auto grid lg:grid-cols-5 md:grid-cols-4 sm:grid-cols-3 grid-cols-2 p-5 md:my-20 my-5 gap-5 gap-y-8 ">
       {descNums.map((descNum, index) => (
         <div
-          className="shadow-lg h-[113px] shadow-cyan-500/70 rounded-3xl shadow-xl p-4 md:px-1 lg:w-60 w-20 bg-[#ffffffd1] w-full xs:w-[50%] sm:w-[25%] md:w-[20%] lg:w-[14%] xl:w-[14%] m-2 hover:-translate-y-1 hover:scale-110 duration-300"
+          className="min-h-[140px] max-h-[140px] max-w-[170px] w-full shadow-cyan-500/70 rounded-3xl shadow-xl  bg-[#ffffffd1]  hover:-translate-y-1 hover:scale-110 duration-300 flex items-center justify-center flex-col px-5"
           style={{
             background:
               "linear-gradient(90.26deg, rgb(160, 221, 243) 0.17%, rgb(128 255 242) 99.77%)",
           }}
           key={index}
         >
-          <h3 className="lg:text-4xl text-2xl font-bold mb-2">{descNum.num}</h3>
-          <p className="lg:text-base text-sm">{descNum.text}</p>
+          <h3 className="lg:text-4xl text-2xl font-bold mb-2 text-center">
+            {descNum.num}
+          </h3>
+          <p className="lg:text-base text-sm text-center">{descNum.text}</p>
         </div>
       ))}
     </div>
