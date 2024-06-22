@@ -33,7 +33,7 @@ const OurTeam = () => {
 
   return (
     <SectionWrapper>
-      <div className="w-full py-5">
+      <div className="w-full py-5" id="team">
         <div className="w-full flex flex-col justify-center items-center gap-4">
           <h1 className="md:text-4xl text-2xl text-center text-black ourteam-font">
             Meet the team!

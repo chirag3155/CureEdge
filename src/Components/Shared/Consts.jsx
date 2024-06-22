@@ -260,6 +260,34 @@ export const FeedbackData = {
   ],
 };
 
+export const link = [
+  {
+    id: 1,
+    name: "Home",
+    link: "#home",
+  },
+  {
+    id: 2,
+    name: "About Us",
+    link: "#doctors",
+  },
+  {
+    id: 3,
+    name: "Services",
+    link: "#services",
+  },
+  {
+    id: 4,
+    name: "Team",
+    link: "#team",
+  },
+  {
+    id: 5,
+    name: "Recommendation ",
+    link: "#recommendation",
+  },
+];
+
 export const FooterData = {
   logo: logo,
   addresses: ["4517 Washington Ave", "Manchester, Kentucky 39495"],
@@ -272,5 +300,5 @@ export const FooterData = {
     "Surgery",
     "More",
   ],
-  links: links,
+  link: link,
 };
