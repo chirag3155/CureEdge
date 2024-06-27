@@ -34,11 +34,11 @@ export const links = [
 
 export const descNums = [
   {
-    num: "500+",
+    num: "15+",
     text: "Expert Doctors",
   },
   {
-    num: "20k+",
+    num: "20+",
     text: "Happy Patients",
   },
   {
@@ -46,11 +46,11 @@ export const descNums = [
     text: "Emergency Service",
   },
   {
-    num: "100+",
+    num: "10+",
     text: "Operation Theatres",
   },
   {
-    num: "50+",
+    num: "10+",
     text: "Hospitals",
   },
 ];
@@ -241,20 +241,20 @@ export const FeedbackData = {
   feedbacks: [
     {
       img: user1,
-      name: "Ralph Edwards",
+      name: "Sanjay Singh",
       job: "Businessman",
       desc: "My experience with this hospital has been great. I highly recommend their services to anyone in need of quility healthcare. they truly prioritize patients care!",
     },
     {
-      img: user2,
-      name: "Josh Smith",
+      img: "https://lh3.googleusercontent.com/ogw/AF2bZyiNJTixH61f111kRBnw8EbLWvbZRdqkFrkFHkYexeGhE1o=s32-c-mo",
+      name: "Chirag Sharma",
       job: "Engineer",
       desc: "The healthcare professionals were top-natch. they were knowledgeable, attentive, and took the time to answer all of my questions and address my concerns",
     },
     {
       img: user3,
-      name: "Eleanor Pena",
-      job: "Teacher",
+      name: "Ashmit Jain ",
+      job: "Engineer",
       desc: "One thing that stood out to me was the efficiency of the service, i didn't have to wait long for my appointment, and the entire process was hassle-free experience",
     },
   ],

@@ -3,12 +3,11 @@ import { motion, AnimatePresence } from "framer-motion";
 import DescNums from "./DescNums";
 import SectionWrapper from "../SectionWrapper";
 import SearchContainer from "./SearchContainer";
-// import CardComponent from './CardComponent';
 
 const images = [
-  "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80",
-  "https://images.unsplash.com/photo-1518623489648-a173ef7824f3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2762&q=80",
-  "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80",
+  "https://conectandonegocios.com/uploads/noticias/1704743646.jpg",
+  "https://www.missouripartnership.com/wp-content/uploads/2018/01/iStock-695349930.jpg",
+  "https://jdcorporateblog.com/wp-content/uploads/2020/04/Online-Doctor.jpg",
 ];
 
 const Home = () => {
@@ -27,26 +26,34 @@ const Home = () => {
       id="home"
       className="flex flex-col items-center md:pt-36 sm:pt-28 pt-20"
     >
-      <div className="relative w-full h-80 md:h-96 overflow-hidden mb-10 shadow-lg shadow-cyan-500/50 ">
-        <AnimatePresence mode="wait">
-          <motion.img
-            key={currentIndex}
-            src={images[currentIndex]}
-            alt={`Slide ${currentIndex}`}
-            className="absolute inset-0 w-full h-full object-cover"
-            initial={{ opacity: 0, x: 100 }}
-            animate={{ opacity: 1, x: 0 }}
-            exit={{ opacity: 0, x: -100 }}
-            transition={{ duration: 0.5 }}
-          />
+      <div className="relative w-full h-96 md:h-[calc(100vh-200px)] overflow-hidden mb-4 shadow-lg">
+        <AnimatePresence initial={false}>
+          {images.map((image, index) => (
+            index === currentIndex && (
+              <motion.img
+                key={index}
+                src={image}
+                alt={`Slide ${index}`}
+                className="absolute inset-0 w-full h-full object-cover"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                transition={{ opacity: { duration: 0.8 } }}
+              />
+            )
+          ))}
         </AnimatePresence>
       </div>
-
+      <div className="flex space-x-2 mb-10">
+        {images.map((_, index) => (
+          <div
+            key={index}
+            className={`w-3 h-3 rounded-full ${index === currentIndex ? 'bg-blue-500' : 'bg-gray-300'}`}
+          />
+        ))}
+      </div>
       <SearchContainer />
       <DescNums />
-      {/* Container for DescNums */}
-
-      {/* <OyoExpanding/> */}
     </div>
   );
 };
