@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Varela Round", sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Styles for the scrollbar thumb */
+::-webkit-scrollbar-thumb {
+  background-color: #6aa6ff; /* Color of the thumb */
+  border-radius: 4px; /* Rounded corners for the thumb */
+}
+
+/* Styles for the scrollbar track */
+::-webkit-scrollbar-track {
+  background-color: #a7c4ff; /* Color of the track */
+  border-radius: 4px;
+}
+
+/* custome hero background  */
+.hero-bg {
+  background-image: url("./assets/Images/heroi-bg.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* meet our team font family  */
+
+.ourteam-font {
+  font-family: "Playfair Display", serif;
+}
